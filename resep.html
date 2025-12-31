@@ -1,0 +1,1175 @@
+<!doctype html>
+<html lang="id" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Froceania - 5 Resep Olahan Kepiting yang Wajib Dicoba. Temukan berbagai cara mengolah kepiting segar menjadi hidangan lezat.">
+  <meta name="keywords" content="resep kepiting, olahan kepiting, kepiting saus padang, kepiting asam manis, kepiting lada hitam">
+  <title>5 Resep Olahan Kepiting yang Wajib Dicoba - Froceania</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .font-display {
+      font-family: 'Playfair Display', serif;
+    }
+    
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes slideInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes wave {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      25% { transform: translateY(-5px) rotate(2deg); }
+      75% { transform: translateY(5px) rotate(-2deg); }
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    
+    .animate-fade-in-up {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    
+    .animate-fade-in {
+      animation: fadeIn 1s ease-out forwards;
+    }
+    
+    .animate-slide-left {
+      animation: slideInLeft 0.8s ease-out forwards;
+    }
+    
+    .animate-slide-right {
+      animation: slideInRight 0.8s ease-out forwards;
+    }
+    
+    .animate-wave {
+      animation: wave 3s ease-in-out infinite;
+    }
+    
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+    
+    .delay-100 { animation-delay: 0.1s; }
+    .delay-200 { animation-delay: 0.2s; }
+    .delay-300 { animation-delay: 0.3s; }
+    .delay-400 { animation-delay: 0.4s; }
+    .delay-500 { animation-delay: 0.5s; }
+    
+    /* Ocean gradient background */
+    .ocean-gradient {
+      background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 50%, #0891b2 100%);
+    }
+    
+    .ocean-light-gradient {
+      background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
+    }
+    
+    /* Wave decoration */
+    .wave-decoration {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .wave-decoration::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,133.3C672,117,768,107,864,122.7C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat bottom center;
+      background-size: cover;
+    }
+    
+    /* Bubble decoration */
+    .bubble {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      animation: float 6s ease-in-out infinite;
+    }
+    
+    /* Card hover effect */
+    .card-hover {
+      transition: all 0.3s ease;
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Navigation transition */
+    .nav-link {
+      position: relative;
+    }
+    
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #0891b2;
+      transition: width 0.3s ease;
+    }
+    
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    
+    /* Mobile menu */
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+    
+    .mobile-menu.active {
+      transform: translateX(0);
+    }
+    
+    /* Image overlay */
+    .image-overlay {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .image-overlay::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(8, 145, 178, 0.8), rgba(3, 105, 161, 0.6));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .image-overlay:hover::before {
+      opacity: 1;
+    }
+    
+    /* Shimmer effect for buttons */
+    .btn-shimmer {
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      background-size: 200% 100%;
+    }
+    
+    .btn-shimmer:hover {
+      animation: shimmer 1.5s infinite;
+    }
+    
+    /* Section visibility for animations */
+    .section-hidden {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    
+    .section-visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.8s ease-out;
+    }
+
+    /* Recipe specific styles */
+    .recipe-card {
+      border-radius: 24px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .recipe-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .difficulty-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    
+    .difficulty-easy {
+      background-color: #dcfce7;
+      color: #16a34a;
+    }
+    
+    .difficulty-medium {
+      background-color: #fef3c7;
+      color: #d97706;
+    }
+    
+    .difficulty-hard {
+      background-color: #fee2e2;
+      color: #dc2626;
+    }
+    
+    .ingredient-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 8px;
+    }
+    
+    .ingredient-list li:before {
+      content: "•";
+      position: absolute;
+      left: 8px;
+      color: #0891b2;
+      font-weight: bold;
+    }
+    
+    .step-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #0891b2;
+      color: white;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+</head>
+<body class="h-full bg-slate-50 text-slate-800 overflow-auto">
+  <!-- Header / Navigation -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-3">
+          <div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full overflow-hidden animate-wave">
+            <img src="Asset Web/Logo Froceania.jpg" alt="Froceania Logo" class="w-full h-full object-cover">
+          </div>
+          <span id="logo-text" class="text-xl lg:text-2xl font-bold font-display text-cyan-700">Froceania</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="index.html#beranda" class="nav-link text-slate-700 hover:text-cyan-600 font-medium transition-colors">Beranda</a>
+          <a href="index.html#profil" class="nav-link text-slate-700 hover:text-cyan-600 font-medium transition-colors">Profil</a>
+          <a href="index.html#produk" class="nav-link text-slate-700 hover:text-cyan-600 font-medium transition-colors">Produk</a>
+          <a href="index.html#berita" class="nav-link text-slate-700 hover:text-cyan-600 font-medium transition-colors">Berita</a>
+          <a href="index.html#galeri" class="nav-link text-slate-700 hover:text-cyan-600 font-medium transition-colors">Galeri</a>
+          <a href="index.html#kontak" class="nav-link text-slate-700 hover:text-cyan-600 font-medium transition-colors">Kontak</a>
+        </nav>
+        
+        <!-- CTA Button Desktop -->
+        <a href="https://linktr.ee/Froceania?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnplPt0W3Wh2jVVoi1BLpX835BvHKbygqwbnRyfleNB0iajx0E2ynTVs9rAN4_aem_tJWBx5xsMKWi0FjvVvBtCA" target="_blank" rel="noopener noreferrer" class="hidden lg:inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-cyan-600 to-teal-500 text-white font-semibold rounded-full hover:from-cyan-700 hover:to-teal-600 transition-all duration-300 shadow-lg hover:shadow-xl btn-shimmer">
+          Hubungi Kami
+        </a>
+        
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors">
+          <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white shadow-2xl lg:hidden">
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-8">
+          <span class="text-xl font-bold font-display text-cyan-700">Menu</span>
+          <button id="close-menu-btn" class="p-2 rounded-lg hover:bg-slate-100 transition-colors">
+            <svg class="w-6 h-6 text-slate-700" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <nav class="flex flex-col space-y-4">
+          <a href="index.html#beranda" class="mobile-nav-link px-4 py-3 text-slate-700 hover:text-cyan-600 hover:bg-cyan-50 rounded-lg font-medium transition-all">Beranda</a>
+          <a href="index.html#profil" class="mobile-nav-link px-4 py-3 text-slate-700 hover:text-cyan-600 hover:bg-cyan-50 rounded-lg font-medium transition-all">Profil</a>
+          <a href="index.html#produk" class="mobile-nav-link px-4 py-3 text-slate-700 hover:text-cyan-600 hover:bg-cyan-50 rounded-lg font-medium transition-all">Produk</a>
+          <a href="index.html#berita" class="mobile-nav-link px-4 py-3 text-slate-700 hover:text-cyan-600 hover:bg-cyan-50 rounded-lg font-medium transition-all">Berita</a>
+          <a href="index.html#galeri" class="mobile-nav-link px-4 py-3 text-slate-700 hover:text-cyan-600 hover:bg-cyan-50 rounded-lg font-medium transition-all">Galeri</a>
+          <a href="index.html#kontak" class="mobile-nav-link px-4 py-3 text-slate-700 hover:text-cyan-600 hover:bg-cyan-50 rounded-lg font-medium transition-all">Kontak</a>
+          <a href="https://linktr.ee/Froceania?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnplPt0W3Wh2jVVoi1BLpX835BvHKbygqwbnRyfleNB0iajx0E2ynTVs9rAN4_aem_tJWBx5xsMKWi0FjvVvBtCA" target="_blank" rel="noopener noreferrer" class="mt-4 px-6 py-3 bg-gradient-to-r from-cyan-600 to-teal-500 text-white font-semibold rounded-full text-center hover:from-cyan-700 hover:to-teal-600 transition-all">Hubungi Kami</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Mobile Menu Overlay -->
+  <div id="menu-overlay" class="fixed inset-0 bg-black/50 z-40 hidden lg:hidden"></div>
+  
+  <!-- Hero Section -->
+  <section class="relative pt-32 pb-16 ocean-gradient wave-decoration">
+    <!-- Decorative bubbles -->
+    <div class="bubble w-20 h-20 top-20 left-10 delay-100"></div>
+    <div class="bubble w-32 h-32 top-40 right-20 delay-300"></div>
+    <div class="bubble w-16 h-16 bottom-40 left-1/4 delay-500"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center">
+        <span class="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm text-white rounded-full text-sm font-medium mb-6 animate-fade-in">
+          🍽️ Resep Spesial
+        </span>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-display text-white leading-tight mb-6 animate-fade-in-up">
+          5 Resep Olahan Kepiting <span class="text-amber-300">Wajib Dicoba</span>
+        </h1>
+        <p class="text-lg lg:text-xl text-cyan-100 mb-8 max-w-3xl mx-auto animate-fade-in-up delay-200">
+          Temukan berbagai cara mengolah kepiting segar berkualitas premium dari Froceania menjadi hidangan lezat yang menggugah selera.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-300">
+          <a href="#resep-1" class="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+            Mulai Membaca
+          </a>
+          <a href="index.html#produk" class="inline-flex items-center justify-center px-8 py-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-semibold rounded-full border-2 border-white/40 transition-all duration-300">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+            Beli Kepiting
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Recipe Introduction -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-3xl p-8 lg:p-12 shadow-lg">
+        <h2 class="text-3xl font-bold font-display text-slate-800 mb-6 text-center">Mengolah Kepiting Segar Menjadi Hidangan Lezat</h2>
+        <p class="text-slate-600 leading-relaxed text-center mb-8">
+          Kepiting segar dari Froceania memiliki daging yang manis dan tekstur yang lembut, cocok untuk diolah menjadi berbagai hidangan lezat. 
+          Berikut adalah 5 resep olahan kepiting yang wajib Anda coba di rumah, mulai dari yang sederhana hingga yang lebih spesial untuk acara istimewa.
+        </p>
+        <div class="grid sm:grid-cols-3 gap-6 text-center">
+          <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <div class="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-slate-800 mb-2">Waktu Memasak</h3>
+            <p class="text-slate-600 text-sm">30-60 menit</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <div class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-slate-800 mb-2">Porsi</h3>
+            <p class="text-slate-600 text-sm">2-4 orang</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-slate-800 mb-2">Tingkat Kesulitan</h3>
+            <p class="text-slate-600 text-sm">Sedang</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Recipe 1: Kepiting Saus Padang -->
+  <section id="resep-1" class="py-16 ocean-light-gradient">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl overflow-hidden shadow-xl recipe-card">
+        <div class="lg:grid lg:grid-cols-2">
+          <div class="aspect-video lg:aspect-square bg-gradient-to-br from-red-100 to-orange-100">
+            <img src="Asset Web/Kepiting Saus Padang.jpg" alt="Kepiting Saus Padang" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8 lg:p-12">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-3xl font-bold font-display text-slate-800">Kepiting Saus Padang</h2>
+              <span class="difficulty-badge difficulty-medium">Sedang</span>
+            </div>
+            <div class="flex items-center space-x-6 mb-6 text-sm text-slate-500">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                45 menit
+              </div>
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                3-4 porsi
+              </div>
+            </div>
+            <p class="text-slate-600 mb-8">
+              Kepiting saus Padang adalah hidangan seafood favorit banyak orang dengan cita rasa pedas, manis, dan gurih yang sempurna. 
+              Daging kepiting yang segar berpadu dengan saus Padang khas yang kaya rempah menciptakan pengalaman kuliner yang tak terlupakan.
+            </p>
+            
+            <div class="mb-8">
+              <h3 class="text-xl font-bold text-slate-800 mb-4">Bahan-bahan:</h3>
+              <ul class="ingredient-list text-slate-600">
+                <li>1 ekor kepiting segar</li>
+                <li>2 siung bawang putih, cincang halus</li>
+                <li>1 buah bawang bombay, iris tipis</li>
+                <li>3 buah cabai merah, iris serong</li>
+                <li>5 buah cabai rawit, iris tipis</li>
+                <li>1 sendok makan saus tiram</li>
+                <li>2 sendok makan saus sambal</li>
+                <li>1 sendok makan kecap manis</li>
+                <li>1 sendok teh gula pasir</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>200 ml air</li>
+                <li>2 sendok makan minyak goreng untuk menumis</li>
+                <li>Daun bawang untuk taburan</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold text-slate-800 mb-4">Cara membuat:</h3>
+              <ol class="space-y-4">
+                <li class="flex">
+                  <span class="step-number mr-4">1</span>
+                  <p class="text-slate-600">Bersihkan kepiting, belah menjadi dua bagian, dan remas sedikit agar bumbu meresap.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">2</span>
+                  <p class="text-slate-600">Panaskan minyak, tumis bawang putih dan bawang bombay hingga harum.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">3</span>
+                  <p class="text-slate-600">Masukkan cabai merah dan cabai rawit, tumis hingga layu.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">4</span>
+                  <p class="text-slate-600">Tambahkan kepiting, aduk rata hingga berubah warna.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">5</span>
+                  <p class="text-slate-600">Tuang saus tiram, saus sambal, kecap manis, gula, garam, dan merica. Aduk rata.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">6</span>
+                  <p class="text-slate-600">Tambahkan air, masak hingga kepiting matang dan bumbu meresap.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">7</span>
+                  <p class="text-slate-600">Taburi dengan daun bawang, sajikan selagi hangat dengan nasi putih.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Recipe 2: Kepiting Asam Manis -->
+  <section id="resep-2" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl overflow-hidden shadow-xl recipe-card">
+        <div class="lg:grid lg:grid-cols-2">
+          <div class="aspect-video lg:aspect-square bg-gradient-to-br from-amber-100 to-yellow-100 order-2 lg:order-1">
+            <img src="Asset Web/Kepiting Asam Manis.jpg" alt="Kepiting Asam Manis" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8 lg:p-12 order-1 lg:order-2">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-3xl font-bold font-display text-slate-800">Kepiting Asam Manis</h2>
+              <span class="difficulty-badge difficulty-easy">Mudah</span>
+            </div>
+            <div class="flex items-center space-x-6 mb-6 text-sm text-slate-500">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                40 menit
+              </div>
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                3-4 porsi
+              </div>
+            </div>
+            <p class="text-slate-600 mb-8">
+              Kepiting asam manis adalah hidangan klasik yang disukai semua kalangan. Perpaduan rasa asam dari jeruk nipis dan tomat, 
+              serta manis dari gula dan kecap menciptakan saus yang sempurna untuk melumuri daging kepiting yang manis dan gurih.
+            </p>
+            
+            <div class="mb-8">
+              <h3 class="text-xl font-bold text-slate-800 mb-4">Bahan-bahan:</h3>
+              <ul class="ingredient-list text-slate-600">
+                <li>1 ekor kepiting segar</li>
+                <li>3 siung bawang putih, cincang halus</li>
+                <li>1 buah bawang bombay, iris tipis</li>
+                <li>1 buah paprika merah, potong dadu</li>
+                <li>1 buah tomat, potong dadu</li>
+                <li>2 sendok makan saus tomat</li>
+                <li>1 sendok makan saus sambal</li>
+                <li>1 sendok makan kecap manis</li>
+                <li>1 sendok teh gula pasir</li>
+                <li>1/2 sendok teh garam</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>2 sendok makan air jeruk nipis</li>
+                <li>150 ml air</li>
+                <li>2 sendok makan minyak goreng untuk menumis</li>
+                <li>Daun bawang untuk taburan</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold text-slate-800 mb-4">Cara membuat:</h3>
+              <ol class="space-y-4">
+                <li class="flex">
+                  <span class="step-number mr-4">1</span>
+                  <p class="text-slate-600">Bersihkan kepiting, belah menjadi dua bagian, dan lumuri dengan air jeruk nipis.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">2</span>
+                  <p class="text-slate-600">Panaskan minyak, tumis bawang putih dan bawang bombay hingga harum.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">3</span>
+                  <p class="text-slate-600">Masukkan paprika dan tomat, tumis hingga layu.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">4</span>
+                  <p class="text-slate-600">Tambahkan kepiting, aduk rata hingga berubah warna.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">5</span>
+                  <p class="text-slate-600">Tuang saus tomat, saus sambal, kecap manis, gula, garam, dan merica. Aduk rata.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">6</span>
+                  <p class="text-slate-600">Tambahkan air, masak hingga kepiting matang dan bumbu meresap.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">7</span>
+                  <p class="text-slate-600">Taburi dengan daun bawang, sajikan selagi hangat dengan nasi putih.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Recipe 3: Kepiting Lada Hitam -->
+  <section id="resep-3" class="py-16 ocean-light-gradient">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl overflow-hidden shadow-xl recipe-card">
+        <div class="lg:grid lg:grid-cols-2">
+          <div class="aspect-video lg:aspect-square bg-gradient-to-br from-gray-100 to-slate-200">
+            <img src="Asset Web/Kepiting Lada Hitam.jpg" alt="Kepiting Lada Hitam" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8 lg:p-12">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-3xl font-bold font-display text-slate-800">Kepiting Lada Hitam</h2>
+              <span class="difficulty-badge difficulty-medium">Sedang</span>
+            </div>
+            <div class="flex items-center space-x-6 mb-6 text-sm text-slate-500">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                45 menit
+              </div>
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                3-4 porsi
+              </div>
+            </div>
+            <p class="text-slate-600 mb-8">
+              Kepiting lada hitam adalah hidangan dengan cita rasa khas yang pedas dan aromatik. Lada hitam yang digiling kasar memberikan 
+              sensasi pedas yang unik dan aroma yang menggugah selera, sempurna untuk dinikmati bersama nasi hangat.
+            </p>
+            
+            <div class="mb-8">
+              <h3 class="text-xl font-bold text-slate-800 mb-4">Bahan-bahan:</h3>
+              <ul class="ingredient-list text-slate-600">
+                <li>1 ekor kepiting segar</li>
+                <li>3 siung bawang putih, cincang halus</li>
+                <li>1 buah bawang bombay, iris tipis</li>
+                <li>2 sendok makan lada hitam kasar</li>
+                <li>1 sendok makan saus tiram</li>
+                <li>1 sendok makan kecap manis</li>
+                <li>1 sendok teh gula pasir</li>
+                <li>1/2 sendok teh garam</li>
+                <li>150 ml air</li>
+                <li>2 sendok makan minyak goreng untuk menumis</li>
+                <li>Daun bawang untuk taburan</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold text-slate-800 mb-4">Cara membuat:</h3>
+              <ol class="space-y-4">
+                <li class="flex">
+                  <span class="step-number mr-4">1</span>
+                  <p class="text-slate-600">Bersihkan kepiting, belah menjadi dua bagian, dan remas sedikit agar bumbu meresap.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">2</span>
+                  <p class="text-slate-600">Panaskan minyak, tumis bawang putih dan bawang bombay hingga harum.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">3</span>
+                  <p class="text-slate-600">Masukkan lada hitam, tumis hingga aromanya keluar.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">4</span>
+                  <p class="text-slate-600">Tambahkan kepiting, aduk rata hingga berubah warna.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">5</span>
+                  <p class="text-slate-600">Tuang saus tiram, kecap manis, gula, dan garam. Aduk rata.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">6</span>
+                  <p class="text-slate-600">Tambahkan air, masak hingga kepiting matang dan bumbu meresap.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">7</span>
+                  <p class="text-slate-600">Taburi dengan daun bawang, sajikan selagi hangat dengan nasi putih.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Recipe 4: Kepiting Telur Asin -->
+  <section id="resep-4" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl overflow-hidden shadow-xl recipe-card">
+        <div class="lg:grid lg:grid-cols-2">
+          <div class="aspect-video lg:aspect-square bg-gradient-to-br from-yellow-100 to-amber-100 order-2 lg:order-1">
+            <img src="Asset Web/Kepiting Telur Asin.jpg" alt="Kepiting Telur Asin" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8 lg:p-12 order-1 lg:order-2">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-3xl font-bold font-display text-slate-800">Kepiting Telur Asin</h2>
+              <span class="difficulty-badge difficulty-hard">Sulit</span>
+            </div>
+            <div class="flex items-center space-x-6 mb-6 text-sm text-slate-500">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                50 menit
+              </div>
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                3-4 porsi
+              </div>
+            </div>
+            <p class="text-slate-600 mb-8">
+              Kepiting telur asin adalah hidangan premium dengan cita rasa gurih dan aromatik yang khas. Perpaduan antara daging kepiting yang manis 
+              dengan telur asin yang gurih menciptakan kombinasi rasa yang unik dan memanjakan lidah.
+            </p>
+            
+            <div class="mb-8">
+              <h3 class="text-xl font-bold text-slate-800 mb-4">Bahan-bahan:</h3>
+              <ul class="ingredient-list text-slate-600">
+                <li>1 ekor kepiting segar</li>
+                <li>3 siung bawang putih, cincang halus</li>
+                <li>2 butir kuning telur asin, haluskan</li>
+                <li>1 sendok makan margarin</li>
+                <li>1 sendok teh gula pasir</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>1/2 sendok teh kaldu bubuk</li>
+                <li>Minyak goreng secukupnya</li>
+                <li>Daun bawang untuk taburan</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold text-slate-800 mb-4">Cara membuat:</h3>
+              <ol class="space-y-4">
+                <li class="flex">
+                  <span class="step-number mr-4">1</span>
+                  <p class="text-slate-600">Bersihkan kepiting, belah menjadi dua bagian, dan lumuri dengan garam dan merica.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">2</span>
+                  <p class="text-slate-600">Goreng kepiting hingga setengah matang, angkat dan tiriskan.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">3</span>
+                  <p class="text-slate-600">Panaskan margarin, tumis bawang putih hingga harum.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">4</span>
+                  <p class="text-slate-600">Masukkan kuning telur asin, aduk hingga berbusa dan aromanya keluar.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">5</span>
+                  <p class="text-slate-600">Tambahkan gula, merica, dan kaldu bubuk. Aduk rata.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">6</span>
+                  <p class="text-slate-600">Masukkan kepiting yang sudah digoreng, aduk cepat hingga terbalut rata dengan saus telur asin.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">7</span>
+                  <p class="text-slate-600">Taburi dengan daun bawang, sajikan selagi hangat dengan nasi putih.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Recipe 5: Sup Kepiting -->
+  <section id="resep-5" class="py-16 ocean-light-gradient">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl overflow-hidden shadow-xl recipe-card">
+        <div class="lg:grid lg:grid-cols-2">
+          <div class="aspect-video lg:aspect-square bg-gradient-to-br from-cyan-100 to-blue-100">
+            <img src="Asset Web/Sup Kepiting.jpg" alt="Sup Kepiting" class="w-full h-full object-cover">
+          </div>
+          <div class="p-8 lg:p-12">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-3xl font-bold font-display text-slate-800">Sup Kepiting</h2>
+              <span class="difficulty-badge difficulty-easy">Mudah</span>
+            </div>
+            <div class="flex items-center space-x-6 mb-6 text-sm text-slate-500">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                35 menit
+              </div>
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-cyan-600" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                4-5 porsi
+              </div>
+            </div>
+            <p class="text-slate-600 mb-8">
+              Sup kepiting adalah hidangan yang menyegarkan dengan kuah gurih dan aroma yang menggugah selera. Daging kepiting yang manis 
+              berpadu dengan sayuran segar dan rempah aromatik menciptakan sup yang sempurna untuk dinikmati saat cuaca dingin atau sebagai pembuka.
+            </p>
+            
+            <div class="mb-8">
+              <h3 class="text-xl font-bold text-slate-800 mb-4">Bahan-bahan:</h3>
+              <ul class="ingredient-list text-slate-600">
+                <li>1 ekor kepiting segar</li>
+                <li>3 siung bawang putih, cincang halus</li>
+                <li>1 buah bawang bombay, iris tipis</li>
+                <li>1 batang serai, memarkan</li>
+                <li>2 cm jahe, memarkan</li>
+                <li>2 lembar daun salam</li>
+                <li>1 buah wortel, iris tipis</li>
+                <li>1 batang daun bawang, iris tipis</li>
+                <li>1 buah tomat, potong dadu</li>
+                <li>1 sendok makan kecap ikan</li>
+                <li>1 sendok teh gula pasir</li>
+                <li>1 sendok teh garam</li>
+                <li>1/2 sendok teh merica bubuk</li>
+                <li>800 ml air atau kaldu seafood</li>
+                <li>2 sendok makan minyak goreng untuk menumis</li>
+                <li>Jeruk nipis untuk penyajian</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold text-slate-800 mb-4">Cara membuat:</h3>
+              <ol class="space-y-4">
+                <li class="flex">
+                  <span class="step-number mr-4">1</span>
+                  <p class="text-slate-600">Bersihkan kepiting, belah menjadi dua bagian, dan sisihkan.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">2</span>
+                  <p class="text-slate-600">Panaskan minyak, tumis bawang putih dan bawang bombay hingga harum.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">3</span>
+                  <p class="text-slate-600">Masukkan serai, jahe, dan daun salam, tumis hingga aromanya keluar.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">4</span>
+                  <p class="text-slate-600">Tambahkan kepiting, aduk rata hingga berubah warna.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">5</span>
+                  <p class="text-slate-600">Tuang air atau kaldu seafood, masak hingga mendidih.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">6</span>
+                  <p class="text-slate-600">Tambahkan wortel, kecap ikan, gula, garam, dan merica. Masak hingga wortel empuk.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">7</span>
+                  <p class="text-slate-600">Masukkan tomat dan daun bawang, masak sebentar hingga layu.</p>
+                </li>
+                <li class="flex">
+                  <span class="step-number mr-4">8</span>
+                  <p class="text-slate-600">Angkat dan sajikan selagi hangat dengan perasan jeruk nipis.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Tips Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-bold font-display text-slate-800 mb-4">Tips Memilih & Mengolah Kepiting</h2>
+        <p class="text-lg text-slate-600 max-w-3xl mx-auto">Ikuti tips berikut untuk mendapatkan hasil olahan kepiting yang sempurna</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-2xl p-6 card-hover">
+          <div class="w-14 h-14 bg-cyan-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Pilih Kepiting Segar</h3>
+          <p class="text-slate-600">Pilih kepiting yang masih hidup dan aktif bergerak. Perhatikan cangkang yang keras dan berat yang proporsional dengan ukurannya.</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-6 card-hover">
+          <div class="w-14 h-14 bg-amber-500 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Bersihkan dengan Benar</h3>
+          <p class="text-slate-600">Bersihkan kepiting dengan air mengalir, buang kotoran di bagian perut, dan belah menjadi dua agar bumbu lebih meresap.</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 card-hover">
+          <div class="w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Jangan Terlalu Lama</h3>
+          <p class="text-slate-600">Hindari memasak kepiting terlalu lama agar daging tidak alot. Kepiting biasanya matang dalam waktu 15-20 menit tergantung ukurannya.</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 card-hover">
+          <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Gunakan Bumbu Segar</h3>
+          <p class="text-slate-600">Gunakan bumbu segar untuk mendapatkan rasa yang maksimal. Bumbu segar akan memberikan aroma dan rasa yang lebih kuat pada hidangan.</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 card-hover">
+          <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Sajikan Segera</h3>
+          <p class="text-slate-600">Kepiting paling nikmat disajikan segera setelah dimasak saat masih hangat agar tekstur dagingnya tetap empuk dan juicy.</p>
+        </div>
+        
+        <div class="bg-gradient-to-br from-red-50 to-rose-50 rounded-2xl p-6 card-hover">
+          <div class="w-14 h-14 bg-red-600 rounded-xl flex items-center justify-center mb-4">
+            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Eksperimen dengan Bumbu</h3>
+          <p class="text-slate-600">Jangan takut untuk bereksperimen dengan berbagai bumbu dan rempah. Setiap daerah memiliki cara pengolahan kepiting yang unik.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="py-16 ocean-gradient">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold font-display text-white mb-6">Siap Mencoba Resep Ini?</h2>
+      <p class="text-xl text-cyan-100 mb-8">Dapatkan kepiting segar berkualitas premium dari Froceania untuk hasil olahan yang sempurna</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="index.html#produk" class="inline-flex items-center justify-center px-8 py-4 bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          Beli Kepiting Sekarang
+        </a>
+        <a href="index.html#kontak" class="inline-flex items-center justify-center px-8 py-4 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-semibold rounded-full border-2 border-white/40 transition-all duration-300">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          Hubungi Kami
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="ocean-gradient text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <!-- Brand -->
+        <div class="lg:col-span-1">
+          <div class="flex items-center space-x-3 mb-6">
+            <div class="w-12 h-12 rounded-full overflow-hidden">
+              <img src="Asset Web/Logo Froceania.jpg" alt="Froceania Logo" class="w-full h-full object-cover">
+            </div>
+            <span class="text-2xl font-bold font-display">Froceania</span>
+          </div>
+          <p class="text-cyan-100 mb-6">Kepiting lokal segar berkualitas premium langsung dari perairan Indonesia. Kami berkomitmen menghadirkan yang terbaik untuk Anda.</p>
+          <div class="flex space-x-3">
+            <a href="https://www.instagram.com/froceania/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBoxbox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a href="https://www.tokopedia.com/froceania" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBoxbox="0 0 24 24">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 3a4 4 0 00-4 4v1H7v6h10v-6h-1V9a4 4 0 00-4-4zm0 2a2 2 0 012 2v1H10V9a2 2 0 012-2z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/6281252358940" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBoxbox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold text-lg mb-6">Link Cepat</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html#beranda" class="text-cyan-100 hover:text-white transition-colors">Beranda</a></li>
+            <li><a href="index.html#profil" class="text-cyan-100 hover:text-white transition-colors">Profil</a></li>
+            <li><a href="index.html#produk" class="text-cyan-100 hover:text-white transition-colors">Produk</a></li>
+            <li><a href="index.html#berita" class="text-cyan-100 hover:text-white transition-colors">Berita</a></li>
+            <li><a href="index.html#galeri" class="text-cyan-100 hover:text-white transition-colors">Galeri</a></li>
+            <li><a href="index.html#kontak" class="text-cyan-100 hover:text-white transition-colors">Kontak</a></li>
+          </ul>
+        </div>
+        
+        <!-- Products -->
+        <div>
+          <h4 class="font-bold text-lg mb-6">Produk Kami</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html#produk" class="text-cyan-100 hover:text-white transition-colors">Kepiting Rajungan</a></li>
+            <li><a href="index.html#produk" class="text-cyan-100 hover:text-white transition-colors">Kepiting Bakau</a></li>
+            <li><a href="index.html#produk" class="text-cyan-100 hover:text-white transition-colors">Kepiting Soka</a></li>
+            <li><a href="index.html#produk" class="text-cyan-100 hover:text-white transition-colors">Kepiting Bunga</a></li>
+            <li><a href="index.html#produk" class="text-cyan-100 hover:text-white transition-colors">Kepiting Hijau</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h4 class="font-bold text-lg mb-6">Kontak</h4>
+          <ul class="space-y-4">
+            <li class="flex items-start space-x-3">
+              <svg class="w-5 h-5 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span class="text-cyan-100">Grezz Residence, Sidoarjo, Jawa Timur 61254</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span class="text-cyan-100">081252358940</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span class="text-cyan-100">info@froceania.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Bottom Bar -->
+      <div class="border-t border-white/20 mt-12 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p class="text-cyan-100 text-sm text-center md:text-left">© 2025 Froceania. Hak Cipta Dilindungi.</p>
+          <div class="flex items-center space-x-6 text-sm">
+            <a href="#" class="text-cyan-100 hover:text-white transition-colors">Kebijakan Privasi</a>
+            <a href="#" class="text-cyan-100 hover:text-white transition-colors">Syarat & Ketentuan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Scroll to Top Button -->
+  <button id="scroll-top" class="fixed bottom-6 right-6 w-12 h-12 bg-cyan-600 text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-cyan-700 z-50 flex items-center justify-center">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBoxbox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+  
+  <script>
+    // Mobile menu functionality
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    function openMobileMenu() {
+      mobileMenu.classList.add('active');
+      menuOverlay.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('active');
+      menuOverlay.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    mobileMenuBtn.addEventListener('click', openMobileMenu);
+    closeMenuBtn.addEventListener('click', closeMobileMenu);
+    menuOverlay.addEventListener('click', closeMobileMenu);
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Header scroll effect
+    const header = document.getElementById('header');
+    let lastScrollY = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY > 100) {
+        header.classList.add('shadow-lg');
+      } else {
+        header.classList.remove('shadow-lg');
+      }
+      
+      lastScrollY = currentScrollY;
+    });
+
+    // Scroll to top button
+    const scrollTopBtn = document.getElementById('scroll-top');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.remove('opacity-0', 'invisible');
+        scrollTopBtn.classList.add('opacity-100', 'visible');
+      } else {
+        scrollTopBtn.classList.add('opacity-0', 'invisible');
+        scrollTopBtn.classList.remove('opacity-100', 'visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('section-visible');
+          entry.target.classList.remove('section-hidden');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections for animation
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
